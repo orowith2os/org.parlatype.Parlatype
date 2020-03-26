@@ -16,7 +16,6 @@
     	"--filesystem=home:ro",
 
         "--talk-name=org.freedesktop.secrets",
-
         "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
     ],
     "cleanup": [
