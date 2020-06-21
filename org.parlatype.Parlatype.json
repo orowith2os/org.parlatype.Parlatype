@@ -23,20 +23,48 @@
         "*.a",
         "/include",
         "/lib/pkgconfig",
-        "/share/man"
+        "/share/man",
+        "/share/pocketsphinx",
+        "/share/sphinxbase"
     ],
     "modules": [
+        {
+            "name": "sphinxbase",
+            "config-opts": [
+                "--without-python"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/cmusphinx/sphinxbase.git",
+                    "commit": "562d0472aababa9a5fbc5b7518ea174745323e4f"
+                }
+            ]
+        },
+        {
+            "name": "pocketsphinx",
+            "config-opts": [
+                "--without-python"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/cmusphinx/pocketsphinx.git",
+                    "commit": "3bf4fe66ed7c31e020ffbd340f5fc1646ecd7dfb"
+                }
+            ]
+        },
         {
             "name": "parlatype",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dasr=false"
+                "-Dasr=true"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gkarsay/parlatype/releases/download/v2.0/parlatype-2.0.tar.gz",
-                    "sha256": "f9833d244f8744f7a9983d680005462d02d062c2538423cb443279da2cc5e2d1"
+                    "url": "https://github.com/gkarsay/parlatype/releases/download/v2.1/parlatype-2.1.tar.gz",
+                    "sha256": "13f1f2895a3ae5bb8809bfd0608baa84138e81388d5648577aface7c808aebf6"
                 }
             ]
         }
