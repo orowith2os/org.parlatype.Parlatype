@@ -58,13 +58,14 @@
             "name": "parlatype",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dasr=true"
+                "-Dpocketsphinx=true",
+		"-Ddeepspeech=true"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gkarsay/parlatype/releases/download/v2.1/parlatype-2.1.tar.gz",
-                    "sha256": "13f1f2895a3ae5bb8809bfd0608baa84138e81388d5648577aface7c808aebf6"
+                    "url": "https://github.com/gkarsay/parlatype/releases/download/v3.0/parlatype-3.0.tar.gz",
+                    "sha256": "27d9c395d2bbd16544d4604b7c722ac68a67a07c06936dae9f1161a034e26bd4"
                 }
             ]
         }
