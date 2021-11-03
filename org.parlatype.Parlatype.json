@@ -23,9 +23,7 @@
         "*.a",
         "/include",
         "/lib/pkgconfig",
-        "/share/man",
-        "/share/pocketsphinx",
-        "/share/sphinxbase"
+        "/share/man"
     ],
     "modules": [
         {
@@ -35,10 +33,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/cmusphinx/sphinxbase.git",
-                    "commit": "562d0472aababa9a5fbc5b7518ea174745323e4f"
+                    "type": "archive",
+                    "url": "https://github.com/cmusphinx/sphinxbase/archive/9e901850ee4cd1c0b22f2d3b3c15f162564ca283.zip",
+                    "sha256": "4369fc4416b2bd3a396ca791cee1ca62c7360f549a78a3c754bb49ba0ebc843a"
                 }
+            ],
+	    "cleanup": [
+		"/share/sphinxbase"
             ]
         },
         {
@@ -48,10 +49,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/cmusphinx/pocketsphinx.git",
-                    "commit": "3bf4fe66ed7c31e020ffbd340f5fc1646ecd7dfb"
+                    "type": "archive",
+                    "url": "https://github.com/cmusphinx/pocketsphinx/archive/ab6d6471800966990e12fdb6ed27ae36323cf2c4.zip",
+                    "sha256": "29ce0c81eda60bef919d42287bcf85d29b8dcb8dcb8dc69998f58a79a6e4a5c0"
                 }
+            ],
+	    "cleanup": [
+		"/share/pocketsphinx"
             ]
         },
         {
