@@ -2,7 +2,7 @@
     "app-id": "org.parlatype.Parlatype",
 
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
 
     "command": "parlatype",
