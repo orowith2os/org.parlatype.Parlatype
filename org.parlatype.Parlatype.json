@@ -21,7 +21,6 @@
         "*.la",
         "*.a",
         "/include",
-        "/lib/debug",
         "/lib/pkgconfig",
         "/lib/python3.8",
         "/libexec",
