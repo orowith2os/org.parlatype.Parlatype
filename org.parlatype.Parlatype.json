@@ -15,7 +15,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-    	"--filesystem=home:ro",
+        "--filesystem=home:ro",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
         "--own-name=org.mpris.MediaPlayer2.parlatype"
@@ -387,8 +387,8 @@
                     "sha256": "4369fc4416b2bd3a396ca791cee1ca62c7360f549a78a3c754bb49ba0ebc843a"
                 }
             ],
-	    "cleanup": [
-		"/share/sphinxbase"
+        "cleanup": [
+            "/share/sphinxbase"
             ]
         },
         {
@@ -403,8 +403,8 @@
                     "sha256": "29ce0c81eda60bef919d42287bcf85d29b8dcb8dcb8dc69998f58a79a6e4a5c0"
                 }
             ],
-	    "cleanup": [
-		"/share/pocketsphinx"
+        "cleanup": [
+            "/share/pocketsphinx"
             ]
         },
         {
@@ -412,7 +412,7 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dpocketsphinx=true",
-		"-Ddeepspeech=true"
+                "-Ddeepspeech=true"
             ],
             "sources": [
                 {
